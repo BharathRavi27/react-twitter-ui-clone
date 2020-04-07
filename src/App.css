@@ -1,38 +1,112 @@
+:root {
+    --body-bg     : rgb(21, 32, 43);
+    --sky-blue    : rgba(29, 161, 242, 1.00);
+    --light       : rgba(255, 255, 2555);
+    --grey        : rgb(136, 153, 166);
+    --border      : rgb(56, 68, 77);
+    --thick-border: rgb(37, 51, 65);
+}
+
+body {
+    background-color: var(--body-bg);
+    font-family     : 'Open Sans', sans-serif;
+    padding         : 0;
+    margin          : 0;
+}
+
+html {
+    font-size: 8px;
+}
+
 .App {
-  text-align: center;
+    display              : grid;
+    grid-template-columns: 2fr 4fr 3fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.side-nav {
+    padding-left: 40%;
+    padding-top : 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-nav svg {
+    fill : var(--light);
+    width: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.side-nav svg:hover {
+    fill: var(--sky-blue);
 }
 
-.App-link {
-  color: #61dafb;
+.side-nav-item {
+    padding: 2rem 0;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side-nav .side-nav-item .side-nav-text {
+    font-size   : 2.5rem;
+    font-weight : 700;
+    color       : var(--light);
+    padding-left: 3rem;
+}
+
+.avatar img {
+    border-radius: 50%;
+}
+
+
+/* helper classes */
+.p-0 {
+    padding: 0
+}
+
+.m-0 {
+    padding: 0
+}
+
+.pl-0 {
+    padding-left: 0
+}
+
+.pr-0 {
+    padding-right: 0
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex-align-center {
+    display    : flex;
+    align-items: center;
+}
+
+.btn {
+    color      : var(--light);
+    font-weight: 700;
+}
+
+.tweet-btn {
+    border-radius   : 4rem;
+    font-size       : 2rem;
+    padding         : 1.5rem;
+    background-color: var(--sky-blue);
+    width           : 80%;
+}
+
+h1 {
+    font-size  : 2.5rem;
+    font-weight: 700;
+    color      : var(--light);
+}
+
+input:focus {
+    outline: none;
 }

@@ -1,0 +1,81 @@
+/* main styles */
+.main {
+    border-left : 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    ;
+}
+
+.home {
+    padding-left : 2.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.new-tweet {
+    padding              : 1rem;
+    display              : grid;
+    grid-template-columns: 1fr 9fr;
+    border-bottom        : 1rem solid var(--thick-border);
+}
+
+.new-tweet .left,
+.right {
+    padding: 0 1rem;
+}
+
+.new-tweet input {
+    padding    : 2rem 0;
+    background : transparent;
+    border     : none;
+    color      : var(--light);
+    font-size  : 2rem;
+    font-weight: 700;
+}
+
+.new-tweet-options {
+    padding-right  : 1rem;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.new-tweet .add-icons {
+    margin-right: 1rem;
+}
+
+.new-tweet .add-icons svg {
+    width  : 3rem;
+    fill   : var(--sky-blue);
+    padding: 1rem;
+}
+
+.new-tweet .add-icons svg:first-child {
+    padding-left: 0;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size  : 2.5rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size  : 2.5rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size  : 2.5rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size  : 2.5rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
