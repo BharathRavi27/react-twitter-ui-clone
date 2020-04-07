@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const SmallAvatar = ({ width }) => {
+export const SmallAvatar = ({ width, image }) => {
     return (
         <div className="avatar">
-            <img width={width} src="https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg" />
+            <img width={width} src={image} />
         </div>
     )
 }

@@ -3,6 +3,7 @@ import { Logo, HomeIcon, ExploreIcon, NotificationIcon, MessageIcon, BookmarkIco
 import { SmallAvatar } from '../images/avatars';
 
 export const Sidebar = () => {
+    const profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
     return (
         <div>
             <div className="side-nav-header">
@@ -36,7 +37,7 @@ export const Sidebar = () => {
                         <span className="side-nav-text">List</span>
                     </li>
                     <li className="side-nav-item flex-align-center">
-                        <SmallAvatar width="22" />
+                        <SmallAvatar width="22" image={profImageurl} />
                         <span className="side-nav-text">Profile</span>
                     </li>
                     <li className="side-nav-item flex-align-center">

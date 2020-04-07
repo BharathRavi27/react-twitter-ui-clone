@@ -1,0 +1,57 @@
+.tweets {}
+
+.tweet-card {
+    padding              : 1rem;
+    display              : grid;
+    grid-template-columns: 1fr 9fr;
+    border-bottom        : 0.5px solid var(--border);
+    border-top           : 0.5px solid var(--border);
+
+}
+
+.tweet-card .left,
+.right {
+    padding: 0 1rem;
+}
+
+.tweet-card .tweet-card-head .tweet-card-name {
+    font-size    : 2rem;
+    font-weight  : 700;
+    padding-right: 1rem;
+}
+
+.tweet-card .tweet-card-head .tweet-card-handle,
+.tweet-card-time {
+    font-size: 2rem;
+    color    : var(--grey);
+}
+
+.tweet-card .tweet-card-body .tweet-card-content p {
+    font-size : 1.8rem;
+    margin-top: .5rem;
+}
+
+.tweet-card .tweet-card-body .tweet-card-image img {
+    width        : 100%;
+    border-radius: 20px;
+}
+
+.tweet-card .tweet-card-footer {
+    padding-right  : 10rem;
+    display        : flex;
+    justify-content: space-between;
+    padding-top    : 1rem;
+}
+
+.tweet-card .tweet-card-footer svg {
+    fill : var(--grey);
+    width: 2.5rem;
+
+}
+
+.tweet-card .tweet-card-footer .tweet-cars-icon {
+    line-height : 2;
+    font-size   : 1.5REM;
+    color       : var(--grey);
+    padding-left: 1rem;
+}

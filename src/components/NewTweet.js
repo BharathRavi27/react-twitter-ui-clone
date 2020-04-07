@@ -3,11 +3,12 @@ import { SmallAvatar } from '../images/avatars'
 import { AddImageIcon, AddGifIcon, AddPollIcon, AddEmojiIcon } from '../images/svg/svgs'
 
 export default class NewTweet extends Component {
+    profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
     render() {
         return (
             <div className="new-tweet">
                 <div className="left">
-                    <SmallAvatar width="48" />
+                    <SmallAvatar width="48" image={this.profImageurl} />
                 </div>
                 <div className="right">
                     <div className="flex-align-center">
