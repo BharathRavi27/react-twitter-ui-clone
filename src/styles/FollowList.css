@@ -1,0 +1,39 @@
+.follow-list {
+    background-color: var(--card-background);
+    border-radius   : 2rem;
+    margin-top      : 3rem;
+}
+
+.follow-list h1 {
+    padding: 1rem 2rem;
+}
+
+.who-to-follow:last-child {
+    border-bottom: none;
+}
+
+.who-to-follow {
+    display              : grid;
+    grid-gap             : 1rem;
+    padding              : 1rem 2rem;
+    grid-template-columns: 1fr 3fr 2fr;
+    border-top           : 1px solid var(--border);
+    border-bottom        : 1px solid var(--border);
+    padding              : 2rem;
+}
+
+.who-to-follow .middle {
+    display       : flex;
+    flex-direction: column;
+}
+
+.who-to-follow .middle .follow-card-name {
+    font-size    : 2rem;
+    font-weight  : 700;
+    padding-right: 1rem;
+}
+
+.who-to-follow .middle .follow-card-handle {
+    font-size: 2rem;
+    color    : var(--grey);
+}

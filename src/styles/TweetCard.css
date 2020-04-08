@@ -31,6 +31,10 @@
     margin-top: .5rem;
 }
 
+.tweet-card .tweet-card-body .tweet-card-image {
+    margin-top: 2rem;
+}
+
 .tweet-card .tweet-card-body .tweet-card-image img {
     width        : 100%;
     border-radius: 20px;
@@ -46,7 +50,6 @@
 .tweet-card .tweet-card-footer svg {
     fill : var(--grey);
     width: 2.5rem;
-
 }
 
 .tweet-card .tweet-card-footer .tweet-cars-icon {

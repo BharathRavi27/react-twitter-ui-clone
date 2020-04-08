@@ -1,0 +1,98 @@
+.trending {
+    padding: 1rem 10rem 1rem 5rem;
+}
+
+.trending .search-box {
+    width     : 100%;
+    background: transparent;
+
+    background-color: var(--thick-border);
+    border-radius   : 5rem;
+    border          : none;
+}
+
+.trending .search-box svg {
+    width       : 3rem;
+    fill        : var(--grey);
+    padding-left: 1rem;
+
+}
+
+.trending .search-box input {
+    padding   : 1.5rem;
+    font-size : 2rem;
+    width     : 100%;
+    background: transparent;
+    border    : none;
+    color     : var(--light);
+}
+
+.trends-list {
+    background-color: var(--card-background);
+    border-radius   : 2rem;
+    margin-top      : 3rem;
+}
+
+.trends-list h1 {
+    padding: 1rem 2rem;
+
+}
+
+.trends-for-you {
+    padding-right: 1rem;
+}
+
+.trends-for-you svg {
+    width: 3.5rem;
+    fill : var(--sky-blue);
+}
+
+.trends-card {
+    border-top   : 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding      : 2rem;
+}
+
+.trends :last-child {
+    border-bottom: none;
+}
+
+.trends-topic {
+    font-size: 1.5rem;
+    color    : var(--grey);
+}
+
+.trend-tweet-count {
+    font-size: 1.75rem;
+    color    : var(--grey);
+}
+
+
+
+.trending ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size  : 2rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+.trending ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size  : 2rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+.trending :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size  : 2rem;
+    color      : #9197a3;
+    font-weight: 400;
+}
+
+.trending :-moz-placeholder {
+    /* Firefox 18- */
+    font-size  : 2rem;
+    color      : #9197a3;
+    font-weight: 400;
+}

@@ -1,3 +1,11 @@
+# Twitter UI Clone
+
+Twitter Homepage UI clone using react.js
+
+Original | Clone
+--- | ---
+![Original](./screenshots/original.png) | ![Clone](./screenshots/clone.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
