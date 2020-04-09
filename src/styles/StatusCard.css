@@ -1,0 +1,90 @@
+.tweets {}
+
+.status-card {
+    /* padding              : 1rem;
+    display                 : grid;
+    grid-template-columns   : 1fr 9fr; */
+    border-bottom           : 0.5px solid var(--border);
+    border-top              : 0.5px solid var(--border);
+
+}
+
+.status-card .left,
+.right {
+    padding: 2rem;
+}
+
+.status-card .left {
+    display    : flex;
+    align-items: center;
+
+}
+
+.status-card .right {
+    padding-top: 0;
+}
+
+.status-card .status-card-name {
+    font-size    : 2rem;
+    font-weight  : 700;
+    padding-right: 1rem;
+}
+
+.status-card .status-card-handle,
+.status-card-time {
+    font-size: 1.5rem;
+    color    : var(--grey);
+}
+
+.status-card .status-card-body .status-card-content p {
+    font-size : 2.5rem;
+    margin-top: .5rem;
+}
+
+.status-card .status-card-body .status-card-image {
+    margin-top: 2rem;
+}
+
+.status-card .status-card-body .status-card-image img {
+    width        : 100%;
+    border-radius: 20px;
+}
+
+.status-card .status-card-footer {
+    padding-right: 10rem;
+    display      : flex;
+
+    justify-content: space-around;
+    padding-top    : 1rem;
+    width          : 100%;
+}
+
+.status-card .status-card-footer svg {
+    fill : var(--grey);
+    width: 2.5rem;
+}
+
+.status-card .status-card-footer .tweet-cars-icon {
+    line-height : 2;
+    font-size   : 1.5REM;
+    color       : var(--grey);
+    padding-left: 1rem;
+}
+
+.status {
+    display    : flex;
+    align-items: center;
+    padding    : 0 2rem;
+    display    : flex;
+    align-items: center;
+}
+
+.status h1 {
+    display     : inline-block;
+    padding-left: 1rem;
+}
+
+.status svg {
+    width: 4rem;
+    fill : var(--sky-blue);
+}

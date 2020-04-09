@@ -1,34 +1,40 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useContext } from 'react'
 import { SmallAvatar } from '../images/avatars'
 import { AddImageIcon, AddGifIcon, AddPollIcon, AddEmojiIcon } from '../images/svg/svgs'
+import { GlobalContext } from '../context/GlobalState';
 
-export default class NewTweet extends Component {
-    profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
-    render() {
-        return (
-            <div className="new-tweet">
-                <div className="left">
-                    <SmallAvatar width="48" image={this.profImageurl} />
-                </div>
-                <div className="right">
-                    <div className="flex-align-center">
+export const NewTweet = () => {
+    const profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
 
-                        <span className="w-100"> <input className="w-100" placeholder="What's happening?" type="text" /></span>
-                    </div>
-                    <div className="new-tweet-options">
-                        <div className="add-icons">
-                            <AddImageIcon />
-                            <AddGifIcon />
-                            <AddPollIcon />
-                            <AddEmojiIcon />
-                        </div>
-                        <div className="tweet">
-                            <div className="btn tweet-btn text-center">Tweet</div>
-                        </div>
-                    </div>
-                </div>
+    const [content, setContent] = useState('');
+    const { addTweet } = useContext(GlobalContext);
+    const handleNewTweet = () => addTweet(content);
 
+    return (
+        <div className="new-tweet">
+            <div className="left">
+                <SmallAvatar width="48" image={profImageurl} />
             </div>
-        )
-    }
+            <div className="right">
+                <div className="flex-align-center">
+
+                    <span className="w-100">
+                        <input className="w-100" placeholder="What's happening?" type="text" onChange={(event) => setContent(event.target.value)} /></span>
+                </div>
+                <div className="new-tweet-options">
+                    <div className="add-icons">
+                        <AddImageIcon />
+                        <AddGifIcon />
+                        <AddPollIcon />
+                        <AddEmojiIcon />
+                    </div>
+                    <div className="tweet" onClick={handleNewTweet}>
+                        <div className="btn tweet-btn text-center">Tweet</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
+
 }

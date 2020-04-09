@@ -1,5 +1,5 @@
 import React from 'react'
-import NewTweet from '../components/NewTweet';
+import { NewTweet } from '../components/NewTweet';
 import '../styles/Main.css';
 import { TweetList } from '../components/TweetList';
 
