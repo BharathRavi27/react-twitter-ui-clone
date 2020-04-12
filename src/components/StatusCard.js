@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/StatusCard.css';
 import { SmallAvatar } from '../images/avatars'
 import { TweetCommentIcon, TweetRetweetIcon, TweetLikeIcon, TweetSendIcon } from '../images/svg/svgs';
 
 export const StatusCard = ({ tweet }) => {
-
-    const profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
 
     return (
         <div className="status-card">

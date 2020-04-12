@@ -63,6 +63,7 @@ export const GlobalProvider = ({ children }) => {
     const [state, dipatch] = useReducer(AppReducer, initialState);
 
     function getTweet(id) {
+
         return state.tweets.find(tweet => tweet.id == id);
     }
     function addTweet(tweets) {

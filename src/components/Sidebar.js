@@ -3,7 +3,7 @@ import { Logo, HomeIcon, ExploreIcon, NotificationIcon, MessageIcon, BookmarkIco
 import { SmallAvatar } from '../images/avatars';
 
 export const Sidebar = () => {
-    const profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
+    const profImageurl = 'https://pbs.twimg.com/profile_images/1247964769669136385/KVCROk2D_bigger.jpg';
     return (
         <div>
             <div className="side-nav-header">

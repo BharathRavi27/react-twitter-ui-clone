@@ -9,7 +9,7 @@ export default (state, action) => {
             const newTweet = {
                 user: {
                     name: 'Bharath',
-                    image: 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg',
+                    image: 'https://pbs.twimg.com/profile_images/1247964769669136385/KVCROk2D_bigger.jpg',
                     handle: '@bharathravi27',
                 },
                 tweet: {

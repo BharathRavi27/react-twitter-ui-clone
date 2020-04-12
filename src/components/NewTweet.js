@@ -1,10 +1,10 @@
-import React, { Component, useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { SmallAvatar } from '../images/avatars'
 import { AddImageIcon, AddGifIcon, AddPollIcon, AddEmojiIcon } from '../images/svg/svgs'
 import { GlobalContext } from '../context/GlobalState';
 
 export const NewTweet = () => {
-    const profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
+    const profImageurl = 'https://pbs.twimg.com/profile_images/1247964769669136385/KVCROk2D_bigger.jpg';
 
     const [content, setContent] = useState('');
     const { addTweet } = useContext(GlobalContext);

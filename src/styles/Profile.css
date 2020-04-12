@@ -1,0 +1,62 @@
+.profile {}
+
+.profile .profile-head {}
+
+.profile .profile-head .banner-img {}
+
+.profile .profile-head .left {}
+
+
+.profile-tweet-count {
+    font-size: 1.5rem;
+    color    : var(--grey);
+}
+
+.banner-img {
+    /* position: relative; */
+}
+
+.profile-avatar {
+    margin-top   : -8rem;
+    border       : .5rem solid;
+    border-radius: 50%;
+    color        : var(--body-bg);
+
+}
+
+.profile svg {
+    width: 4rem;
+    fill : var(--sky-blue);
+    ;
+}
+
+
+.follow-me {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+}
+
+.follow-me>svg,
+.follow-me>button {
+    margin: 0 1rem
+}
+
+.follow-me>.tweet-btn {
+    width: 25%;
+}
+
+.profile-description {
+    font-size : 1.8rem;
+    margin-top: .5rem;
+}
+
+.profile-description-contact {
+    display: flex;
+}
+
+.profile-description-contact>.location>svg {
+    width: 2.25rem;
+    fill : var(--grey);
+}

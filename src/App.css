@@ -95,16 +95,33 @@ html {
     padding: 0
 }
 
-.m-0 {
-    margin: 0
-}
 
 .pl-0 {
     padding-left: 0
 }
 
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem
+}
+
 .pr-0 {
     padding-right: 0
+}
+
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.m-0 {
+    margin: 0
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .text-center {
@@ -117,6 +134,10 @@ html {
 
 .pl-1 {
     padding-left: 1rem;
+}
+
+.pr-1 {
+    padding-right: 1rem;
 }
 
 ul {
@@ -132,6 +153,12 @@ ul {
     display        : flex;
     justify-content: space-between;
 }
+
+.inline-block {
+    display: inline-block;
+
+}
+
 
 .btn {
     color      : var(--light);
@@ -160,6 +187,11 @@ ul {
 
 .pointer {
     cursor: pointer;
+}
+
+.bold-dull-para {
+    font-size: 1.75rem;
+    color    : var(--grey);
 }
 
 a {

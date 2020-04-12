@@ -1,5 +1,5 @@
 import React from 'react'
-import TweetCard from '../components/TweetCard'
+
 import { StatusCard } from '../components/StatusCard'
 import { BackIcon } from '../images/svg/svgs';
 import { Link } from 'react-router-dom';
@@ -8,6 +8,7 @@ import { GlobalContext } from '../context/GlobalState';
 
 export const Status = ({ match }) => {
     const tweetId = match.params.id;
+
     const { getTweet } = useContext(GlobalContext)
     return (
         <div>

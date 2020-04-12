@@ -6,7 +6,13 @@ import { Link } from 'react-router-dom';
 
 export default class TweetCard extends Component {
     tweet = this.props.tweet;
-    profImageurl = 'https://pbs.twimg.com/profile_images/666225940184215552/cPHMETmB_normal.jpg';
+    profImageurl = 'https://pbs.twimg.com/profile_images/1247964769669136385/KVCROk2D_bigger.jpg';
+
+    handleRouting = (e) => {
+        // e.preventDefault();
+        // debugger
+        // this.props.history.push('data')
+    }
     render() {
         return (
             <Link to={`/status/${this.tweet.id}`}>
@@ -17,8 +23,10 @@ export default class TweetCard extends Component {
                     </div>
                     <div className="right">
                         <div className="tweet-card-head">
-                            <span className="tweet-card-name">{this.tweet.user.name}</span>
-                            <span className="tweet-card-handle">{this.tweet.user.handle}</span>
+                            <span className="tweet-card-name" onClick={this.handleRouting}>{this.tweet.user.name}</span>
+
+                            <span className="tweet-card-handle" onClick={this.handleRouting}>{this.tweet.user.handle}</span>
+
                             <span className="tweet-card-time"> - {this.tweet.tweet.time}</span>
                         </div>
                         <div className="tweet-card-body">

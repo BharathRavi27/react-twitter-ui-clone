@@ -20,6 +20,10 @@
     padding-right: 1rem;
 }
 
+.tweet-card .tweet-card-head .tweet-card-name:hover {
+    text-decoration: underline;
+}
+
 .tweet-card .tweet-card-head .tweet-card-handle,
 .tweet-card-time {
     font-size: 2rem;
